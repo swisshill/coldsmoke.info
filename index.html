@@ -1,0 +1,76 @@
+<?php session_start(); // place it on the top of the script ?>
+<?php
+		$statusMsg = !empty($_SESSION['msg'])?$_SESSION['msg']:'';
+		unset($_SESSION['msg']);
+		echo $statusMsg;
+?>
+<!DOCTYPE HTML>
+<!--
+	From
+	Eventually by HTML5 UP
+	html5up.net | @ajlkn
+	Free use under the CCA 3.0 license (html5up.net/license)
+	Modified by
+	Marc-Ed
+-->
+<html>
+
+<head>
+	<title>Cold Smoke</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header id="header">
+		<h1>Cold Smoke</h1>
+		<p>Music band based in Switzerland. <br> The name "Cold Smoke" refers here to a greatly coveted state of water, where beauty meets emotion : the glittering cloud of powder experienced by free riders when carving lines through a fresh layer of snow. Our
+			music aims to evoke that kind of sensation.
+		</p>
+	</header>
+	<!-- Soundcloud track-->
+	<div>
+		<!-- <iframe width="320px" height="100px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/303706779&amp;color=5C5F60&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe> -->
+		<iframe width="320px" height="100px" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/303706779&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+	</div>
+
+	<!-- Signup Form 2-->
+
+	<div>
+		<iframe width="100%" height="100%" src="form.php"></iframe>
+	</div>
+
+
+
+	<!-- Footer -->
+	<footer id="footer">
+		<ul class="icons">
+			<li><a href="https://twitter.com/@_coldsmoke" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+			<li><a href="https://www.facebook.com/c0ldsm0ke" target="_blank" class="icon fa-facebook"><span class="label">Instagram</span></a></li>
+			<li><a href="https://soundcloud.com/c0ldsm0ke/" target="_blank" class="icon fa-soundcloud"><span class="label">Soundcloud</span></a></li>
+			<li><a href="mailto:officialcoldsmoke@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+			<li><a href="http://www.instillations.com/index.html" target="_blank" class="icon fa-users"><span class="label">Association</span></a></li>
+		</ul>
+		<ul class="copyright">
+			<!-- <li><a href="index.html">Switch to French</a></li> -->
+			<li>Switch to French</li>
+			<li>&copy; <a href="http://www.instillations.com/index.html">Instillations</a></li>
+			<li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
+		</ul>
+	</footer>
+
+	<!-- Scripts -->
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
